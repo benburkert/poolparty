@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+$:.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
+require "poolparty"
+
+PoolParty::Generators.run_cli(Dir.pwd, 'pool-gen', PoolParty::VERSION::STRING, ARGV)

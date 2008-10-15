@@ -19,6 +19,10 @@ require "#{File.dirname(__FILE__)}/poolparty/version"
   end
 end
 
+#require pool-gen
+dir = File.dirname(__FILE__)
+require dir + '/poolparty/generators/pool-gen'
+
 Kernel.load_p File.dirname(__FILE__) + "/poolparty/pool"
 
 module PoolParty
